@@ -9,8 +9,10 @@
     != HikiDoc.to_xhtml(@post.content)
 
   %ul.meta
-    %li Posted on #{post.created_at.to_s(:db)}
-    %li #{post.comments.count} Comments
+    %li Posted on #{@post.created_at.to_s(:db)}
+    %li #{@post.comments.count} Comments
+    %li
+      %a(href="/posts/edit/#{@post.id}") Edit
 
   %dl.comments
     - @post.comments.each do |comment|

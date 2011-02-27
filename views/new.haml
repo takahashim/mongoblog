@@ -13,3 +13,5 @@
 
   .actions
     %input(type='submit' value='Post')
+  - if @post.id
+    %input(name='post[id]' type='hidden'){:value => @post.id}
