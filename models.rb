@@ -1,4 +1,8 @@
-MongoMapper.database = 'blog'
+##logger = Logger.new('test.log')
+##MongoMapper.connection = Mongo::Connection.new('flame.mongohq.com', 27053, { :logger => logger })
+MongoMapper.connection = Mongo::Connection.new('flame.mongohq.com', 27053, {})
+MongoMapper.database = 'mongoblog'
+MongoMapper.database.authenticate('admin', 'xxxx')
 
 class Post
   include MongoMapper::Document
