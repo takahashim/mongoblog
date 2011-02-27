@@ -29,7 +29,7 @@ end
 
 
 get '/' do
-  @posts = Post.all(:order => 'created_at DESC')
+  @posts = Post.sort(:created_at).limit(10).all(:order => 'created_at DESC')
 
   haml :posts
 end
