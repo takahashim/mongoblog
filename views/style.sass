@@ -1,106 +1,86 @@
 body
-  :margin 0
-  :background-color = yellow + #ccc
+  margin: 0
+  background-color: yellow + #cccccc
 
 header
-  :position relative
-  :background-color = red - #666
-
+  position: relative
+  background-color: red - #666666
   h1
-    :padding 0.5em 0.8em
-    :margin 0
-
+    padding: 0.5em 0.8em
+    margin: 0
     a
-      :color white
-      :text-decoration none
-
+      color: white
+      text-decoration: none
   nav
-    :position absolute
-    :bottom 0.5em
-    :right 0.8em
-
+    position: absolute
+    bottom: 0.5em
+    right: 0.8em
     ul
-      :margin 0
-      :padding 0
-
+      margin: 0
+      padding: 0
       li
-        :display inline-block
-
+        display: inline-block
         a
-          :color white
+          color: white
 
 #content
-  :margin 2em 5%
+  margin: 2em 5%
 
 .errors
-  :font-weight bold
-  :color red
+  font-weight: bold
+  color: red
 
 article
   h2
-    :border-bottom thin solid silver
-    :margin-bottom 0.3em
-
+    border-bottom: thin solid silver
+    margin-bottom: 0.3em
     a
-      :text-decoration none
-
+      text-decoration: none
       &, &:visited
-        :color = red - #666
-
-  p.content
-    :border thin solid silver
-    :margin 0
-    :padding 1em
-    :background-color white
-
+        color: red - #666666
+  div.content
+    border: thin solid silver
+    margin: 0
+    padding: 0 1em
+    background-color: white
   ul.meta
-    :margin-top 0.2em
-    :padding-left 0
-    :text-align right
-    :font-size smaller
-    :color gray
-
+    margin-top: 0.2em
+    padding-left: 0
+    text-align: right
+    font-size: smaller
+    color: gray
     li
-      :margin-left 0
-      :display inline-block
-
+      margin-left: 0
+      display: inline-block
       &:not(:last-child):after
-        :content ' | '
-
+        content: " | "
   dl.comments
     dt
-      :font-weight bold
-
+      font-weight: bold
     dd
-      :margin-left 1em
-
+      margin-left: 1em
   form
     dl
       dt
-        :font-weight bold
-
+        font-weight: bold
       dd
-        :margin-left 0
+        margin-left: 0
 
 form.post
   dt
-    :margin-top 0.6em
-    :font-weight bold
-
+    margin-top: 0.6em
+    font-weight: bold
   dd
-    :margin-left 0
-
+    margin-left: 0
   input[type=text]
-    :width 32em
-
+    width: 32em
   textarea
-    :width 32em
-    :height 12em
+    width: 32em
+    height: 12em
 
 form.comment
   input[type=text]
-    :width 8em
-
+    width: 8em
   textarea
-    :width 24em
-    :height 6em
+    width: 24em
+    height: 6em
